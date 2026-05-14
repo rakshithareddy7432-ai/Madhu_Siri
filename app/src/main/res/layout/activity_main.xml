@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:text="MadhuSiri"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- ROLE -->
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioFarmer"
+                android:text="Farmer"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioBeekeeper"
+                android:text="Beekeeper"
+                android:layout_marginStart="20dp"/>
+
+            <RadioButton
+                android:id="@+id/radioAdmin"
+                android:text="Admin"
+                android:layout_marginStart="20dp"/>
+        </RadioGroup>
+
+        <!-- PHONE -->
+        <EditText
+            android:id="@+id/etPhone"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_marginTop="20dp"/>
+
+        <!-- OTP -->
+        <EditText
+            android:id="@+id/etOtp"
+            android:hint="OTP"
+            android:inputType="number"
+            android:layout_marginTop="10dp"/>
+
+        <!-- PASSWORD -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Admin Password"
+            android:inputType="textPassword"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btnSendOtp"
+            android:text="Send OTP"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btnAction"
+            android:text="Continue"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</ScrollView>

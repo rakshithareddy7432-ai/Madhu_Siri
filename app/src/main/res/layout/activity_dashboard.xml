@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🐝 Madhu-Siri Dashboard"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- 📍 MAP -->
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="📍 View Map"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- ➕ ADD HIVE -->
+        <Button
+            android:id="@+id/btnAddHive"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="➕ Add Hive"
+            android:backgroundTint="#FFC107"
+            android:textColor="#000000"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- 🚨 SPRAY -->
+        <Button
+            android:id="@+id/btnSpray"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="🚨 Spraying Today"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- 📊 HEALTH -->
+        <Button
+            android:id="@+id/btnHealth"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="📊 Bee Health"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- 🌿 TIPS -->
+        <Button
+            android:id="@+id/btnTips"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="🌿 Safe Tips"
+            android:backgroundTint="#9C27B0"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</ScrollView>

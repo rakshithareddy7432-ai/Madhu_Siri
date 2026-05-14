@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#E8F5E9">
+
+    <TextView
+        android:text="🌾 Farmer Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- 📍 MAP BUTTON -->
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📍 Set Farm Location"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- 🌾 SPRAY -->
+    <Button
+        android:id="@+id/btnSpray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spraying Today"/>
+</LinearLayout>

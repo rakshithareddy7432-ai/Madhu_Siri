@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 🌐 INTERNET -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- 📍 LOCATION -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- 📡 NETWORK -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MadhuSiri"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        android:usesCleartextTraffic="true">
+
+        <!-- ✅ GOOGLE MAPS API KEY -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAlNtaCnNV_qBMGBYLw3RPDXwH0ay7FPkw"/>
+
+        <!-- 🚀 START SCREEN -->
+        <activity
+            android:name=".UserTypeActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+
+        </activity>
+
+        <!-- 🔐 LOGIN -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:parentActivityName=".UserTypeActivity"/>
+
+        <!-- 🏠 DASHBOARD -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity"/>
+
+        <!-- 🗺️ MAP -->
+        <activity
+            android:name=".MapActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity"/>
+
+        <!-- 📍 LOCATION RESULT -->
+        <activity
+            android:name=".LocationResultActivity"
+            android:exported="false"
+            android:parentActivityName=".MapActivity"/>
+
+        <!-- 🐝 ADD HIVE -->
+        <activity
+            android:name=".AddHiveActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity"/>
+
+        <!-- 📊 HEALTH -->
+        <activity
+            android:name=".HealthActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity"/>
+
+        <!-- 🚨 SPRAYING TODAY -->
+        <activity
+            android:name=".AlertActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity"/>
+
+        <!-- 🌿 TIPS -->
+        <activity
+            android:name=".TipsActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity"/>
+
+        <!-- 🔔 NOTIFICATIONS -->
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity"/>
+
+    </application>
+
+</manifest>

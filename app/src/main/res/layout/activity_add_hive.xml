@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐝 ADD HIVE"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- HIVE NAME -->
+        <EditText
+            android:id="@+id/etHiveName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Hive Name"
+            android:padding="12dp"/>
+
+        <!-- HIVE ID -->
+        <EditText
+            android:id="@+id/etHiveId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Hive ID"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"/>
+
+        <!-- LOCATION -->
+        <EditText
+            android:id="@+id/etHiveLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Hive Location"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"/>
+
+        <!-- BEE TYPE -->
+        <EditText
+            android:id="@+id/etBeeType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Bee Type"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"/>
+
+        <!-- NOTES -->
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notes (Optional)"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"/>
+
+        <!-- LOCATION BUTTON -->
+        <Button
+            android:id="@+id/btnPickLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📍 Set Hive Location"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"/>
+
+        <!-- SAVE BUTTON -->
+        <Button
+            android:id="@+id/btnSaveHive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💾 SAVE HIVE"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"/>
+
+        <!-- RESULT -->
+        <TextView
+            android:id="@+id/tvHiveResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,22 @@
+<!-- res/values/strings.xml -->
+
+<resources>
+    <string name="app_name">MadhuSiri</string>
+
+    <!-- FIX THIS ERROR -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <!-- Login Strings -->
+    <string name="login">Login Screen</string>
+    <string name="user">User</string>
+    <string name="admin">Admin</string>
+    <string name="phone">Phone Number</string>
+    <string name="otp">OTP</string>
+    <string name="password">Admin Password</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="login_btn">Login</string>
+
+    <!-- Other Fix -->
+    <string name="lorem_ipsum">Sample Text</string>
+</resources>
